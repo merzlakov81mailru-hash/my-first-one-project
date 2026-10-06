@@ -1,0 +1,186 @@
+/*
+ * ТЁМНАЯ ТЕМА (ночь, с 20:00 до 08:00 по Екатеринбургу)
+ */
+
+
+:root {
+    --bg:      #1A1210;                   /* фон страницы */
+    --surface: #261A16;                   /* фон карточек и форм */
+    --text:    #F2E6DA;                   /* основной текст */
+    --muted:   #B8A99B;                   /* второстепенный текст */
+    --line:    rgba(255, 255, 255, 0.15); /* тонкие рамки */
+
+    color-scheme: dark;                   /* тёмные скроллбары и элементы форм */
+}
+
+
+/* ---------- Общее ---------- */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+/* Фон всех секций (в style.css у каждой свой светлый #FAF0E6) */
+.hero,
+.features,
+.about,
+.collections,
+.process,
+.testimonials,
+.catalog-hero,
+.collection-section,
+.form-page,
+.product-order,
+.order-info {
+    background-color: var(--bg);
+}
+
+
+
+
+.section-title,
+.hero__title,
+.feature-title,
+.card-title,
+.process-item-title,
+.review-card__name,
+.review-card__text,
+.collection-title,
+.product-name,
+.form-page-title,
+.order-info,
+.privacy-link,
+legend,
+label,
+.delivery-options label {
+    color: var(--text);
+}
+
+
+.hero__text,
+.feature-text,
+.card-text,
+.card-features li,
+.process-text,
+.review-card__location,
+.catalog-subtitle,
+.product-desc,
+.form-page-subtitle,
+.form-link {
+    color: var(--muted);
+}
+
+.review-card__date,
+.field-hint {
+    color: #9A8B7E;
+}
+
+.product-price {
+    color: #E8A268;
+}
+
+
+
+.header {
+    background: linear-gradient(90deg, #120A07 0%, #3A100C 100%);
+    border-bottom: 1px solid var(--line);
+}
+
+.footer {
+    background: linear-gradient(180deg, #120A07 0%, #3A100C 100%);
+}
+
+
+/* ---------- Кнопки ---------- */
+.btn-outline {
+    border-color: var(--text);
+    color: var(--text);
+}
+
+.btn-outline:hover {
+    background-color: var(--text);
+    color: var(--bg);
+}
+
+.btn-buy {
+    background-color: #4A2E22;
+    border: 1px solid var(--line);
+    color: var(--text);
+}
+
+.btn-buy:hover {
+    background-color: #5E3B2C;
+}
+
+button[type="reset"] {
+    border-color: #5A463B;
+    color: var(--muted);
+}
+
+button[type="reset"]:hover {
+    border-color: var(--text);
+    color: var(--text);
+}
+
+
+/* ---------- Карточки (были белые) ---------- */
+.collection-card,
+.review-card,
+.product-card,
+fieldset,
+.order-form {
+    background-color: var(--surface);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.collection-card:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+.product-image {
+    background-color: #3A2A22;
+}
+
+.process-item {
+    border-color: var(--line);
+}
+
+.order-form {
+    border-color: var(--line);
+}
+
+.form-title {
+    color: #E5533F;
+}
+
+
+/* ---------- Поля форм ---------- */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    background-color: #1D1411;
+    border-color: #5A463B;
+    color: var(--text);
+}
+
+input[required] {
+    border-left-color: #D2493A;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"] {
+    background-color: #2E211C;
+    color: var(--text);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.checkout-form input::placeholder,
+input::placeholder {
+    color: var(--muted);
+}
+
+.form-link a {
+    color: #E5533F;
+}
